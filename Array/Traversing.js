@@ -18,4 +18,3 @@ for (let i = 0; i <= arr.length; i++) {
 if(!found){
     console.log("Target Not Found in this array");
 }
-
