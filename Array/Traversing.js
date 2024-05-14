@@ -1,20 +1,19 @@
-//Traversing 
-//target = 4
-let arr = [1, 2, 3, 4, 5, 6];
-let TargetNumber = 7;
+let arr = [11,22,33,44,55,66];
+let TargetElement = 55;
 let found = false;
 
-for (let i = 0; i <= arr.length; i++) {
-    //console.log(arr[i])
+function Traversing(arr){
+    for(let i =0; i<arr.length;i++){
 
-    if (arr[i] == TargetNumber){
-        found = true;
-        console.log("Target Number are Found at inde",i);
-        break;
+        if(arr[i]==TargetElement){
+            found = true;
+            console.log("Target element found in index number ",i);
+            break;
+        }
     }
-    
+    if(!found){
+        console.log("Target element not in the array");
+    }
 }
 
-if(!found){
-    console.log("Target Not Found in this array");
-}
+Traversing(arr)

@@ -4,7 +4,7 @@ function FindLargestString(stringArray) {
     for (let i = 0; i < stringArray.length; i++) {
         const currentString = stringArray[i];
 
-        if (currentString.length > longestString.length) {
+        if(currentString.length > longestString.length) {
             longestString = currentString;
         }
     }
